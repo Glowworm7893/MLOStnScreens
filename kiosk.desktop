@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=/home/kioskuser/bin/kiosk_startup.sh
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_AU]=Kiosk Startup
+Name=Kiosk Startup
+Comment[en_AU]=Starts kiosk applications
+Comment=Starts kiosk applications
