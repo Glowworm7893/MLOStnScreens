@@ -26,7 +26,7 @@ sleep 10
 # Move and resize windows using their titles
 # The format is: wmctrl -r "title" -e gravity,X,Y,Width,Height
 echo "Moving windows to their designated displays..."
-wmctrl -r "$AVAR" -e 0,0,0,3840,2160
-wmctrl -r "$webscreen" -e 0,3840,0,3840,2160
+wmctrl -r "$TITLE1" -e 0,0,0,3840,2160
+wmctrl -r "$TITLE2" -e 0,3840,0,3840,2160
 
 echo "Kiosk setup complete."
