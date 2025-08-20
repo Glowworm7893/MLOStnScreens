@@ -22,10 +22,10 @@ TITLE2="webscreen" # IMPORTANT: This must match the window title
 
 # --- Launch Chromium Instances in the background ---
 # They will launch on the primary display first
-chromium-browser --kiosk --no-first-run --disable-infobars --user-data-dir="/home/kioskuser/.config/chromium_instance1" "$URL1" &
+chromium-browser --new-window --kiosk --no-first-run --disable-infobars --user-data-dir="/home/kioskuser/.config/chromium_instance1" "$URL1" &
 # Launch the second Chromium instance with multiple URLs and the TabCycle extension
 # The --enable-extension-apps flag ensures extensions run correctly
-chromium-browser --kiosk --no-first-run --disable-infobars --enable-extension-apps --user-data-dir="/home/kioskuser/.config/chromium_instance2" "$URL2" "$URL3" "$URL4" "$URL5" "$URL6" "$URL7" "$URL8" &
+chromium-browser --new-window --kiosk --no-first-run --disable-infobars --enable-extension-apps --user-data-dir="/home/kioskuser/.config/chromium_instance2" "$URL2" "$URL3" "$URL4" "$URL5" "$URL6" "$URL7" "$URL8" &
 
 # --- Wait for windows to appear and then move them ---
 # Give the browsers time to load their windows and titles
